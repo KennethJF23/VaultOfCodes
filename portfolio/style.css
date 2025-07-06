@@ -1,0 +1,390 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: -webkit-linear-gradient(180deg, #000000 0%, #0a0a0a 35%, #121212 65%, #1a1a1a 100%);
+  background: -moz-linear-gradient(180deg, #000000 0%, #0a0a0a 35%, #121212 65%, #1a1a1a 100%);
+  background: linear-gradient(180deg, #000000 0%, #0a0a0a 35%, #121212 65%, #1a1a1a 100%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #f8fafc;
+}
+
+.bg-video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.navbar{
+    display: flex ;
+    gap: 30px;
+    background-color: 1e293b;
+    justify-content: flex-end;
+
+}
+
+.navbar button{
+    background: transparent;
+    height: 50px;
+    width: 75px;
+    background-image: linear-gradient(rgb(133,133,133),rgb(255,255,255));
+    color: transparent;
+    background-clip: text;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    font-size: medium;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    outline: none;
+    right: 50px;
+}
+
+.navbar button::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 8px;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: wid   th 0.3s ease-in-out;
+}
+
+.navbar button:hover::after{
+    width: 100%;
+}
+
+.navbar button:active{
+    color: #f8fafc;
+}
+
+.main{
+    justify-content: space-between;
+    letter-spacing: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main h1{
+    text-align: center;
+    background-image: linear-gradient(rgb(133,133,133),rgb(255,255,255));
+    color: transparent;
+    background-clip: text;
+    font-size: 4rem;
+    font-weight: 90;
+
+}
+
+.About{
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(255,255,255,0.1);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+    gap: 10px;
+    height: 250px;
+}
+
+.About:hover{
+    transform: scale(1.02);
+}
+
+.About h2{
+    background-image: linear-gradient(rgb(248, 245, 245),rgb(255,255,255));
+    color: transparent;
+    background-clip: text;
+    font-size: 2rem;
+    font-weight: 10;
+    left: 300px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.About p{
+    background-image: linear-gradient(rgb(210, 209, 209),rgb(240, 239, 239));
+    color: transparent;
+    background-clip: text;
+    font-size: 1rem; 
+}
+
+.About img{
+    border-radius: 50%;
+    height: 200px;
+    
+}
+
+.Skills{
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(255,255,255,0.1);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+    font-size: 1rem;
+}
+
+.Skills h2{
+    background-image: linear-gradient(rgb(253, 252, 252),rgb(255,255,255));
+    color: transparent;
+    background-clip: text;
+    font-size: 2rem;
+    font-weight: 100;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Skills h3{
+    background-image: linear-gradient(rgb(133,133,133),rgb(255,255,255));
+    color: transparent;
+    background-clip: text;
+    font-size: 1.2rem;
+}
+
+.Skills:hover{
+    transform: scale(1.02);
+}
+
+.Skills ul{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    
+}
+
+.Skills li{
+    height: 45px;
+    width: 100px;
+    border: 1px solid #f8fafc;
+    border-radius: 25%;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(255,255,255,0.1);
+    -webkit-backdrop-filter: blur(10px); 
+    
+}
+
+.Skills li:hover{
+    transform: scale(1.1);
+}
+
+.Skills .Languages{
+    height:300px;
+    border-radius: 30%;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(255,255,255,0.1);
+    -webkit-backdrop-filter: blur(10px); 
+}
+
+.Skills .Additional{
+    height:300px;
+    border-radius: 30%;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(255,255,255,0.1);
+    -webkit-backdrop-filter: blur(10px); 
+}
+
+.Skills .DS{
+    height:300px;
+    border-radius: 30%;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(255,255,255,0.1);
+    -webkit-backdrop-filter: blur(10px); 
+}
+
+.Skills .FrameWork{
+    height:400px;
+    border-radius: 30%;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(255,255,255,0.1);
+    -webkit-backdrop-filter: blur(10px); 
+}
+
+.Skills .DataBase{
+    height:300px;
+    border-radius: 30%;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(255,255,255,0.1);
+    -webkit-backdrop-filter: blur(10px); 
+}
+
+.Skills .DSA{
+    height:300px;
+    border-radius: 30%;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(255,255,255,0.1);
+    -webkit-backdrop-filter: blur(10px); 
+}
+
+.Skills a{
+    color: #f8fafc;
+}
+
+.Projects{
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(255,255,255,0.1);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+    height: auto;
+}
+
+.Projects:hover{
+    transform: scale(1.02);
+}
+
+.Projects h2{
+    background-image: linear-gradient(rgb(253, 252, 252),rgb(255,255,255));
+    color: transparent;
+    background-clip: text;
+    font-size: 2rem;
+    font-weight: 100;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 40px;
+}
+
+.Projects img{
+    height:10rem;
+    width: 100%;
+}
+
+.Projects .sub{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Projects a{
+    color: white;
+}
+
+.Projects .sub .P1,
+.Projects .sub .P2,
+.Projects .sub .P3 {
+    border: 1px solid #f8fafc;
+    max-width: 1000px;
+    min-height: 100px;
+    padding: 10px;
+    overflow-y: auto;       
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 10px;
+    flex: 1 1 30%;
+    flex-shrink: 0;
+}
+
+.Projects .sub h4{
+    border: 1px solid #f8fafc;
+    width: 100%;
+    margin: 0;
+    padding: 5px 0;
+    box-sizing: border-box;
+    display: block;
+    text-align: center;
+}
+
+.Projects .sub p{
+    font-size: 1rem;
+    background-image: linear-gradient(rgb(170, 168, 168),rgb(255,255,255));
+    
+    color: transparent;
+    background-clip: text;
+    
+}
+
+.Projects .sub .P1:hover{
+    transform: scale(1.1);
+}
+
+.Projects .sub .P2:hover{
+    transform: scale(1.1);
+}
+
+.Projects .sub .P3:hover{
+    transform: scale(1.1);
+}
+
+
+
+.Contact{
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(255,255,255,0.1);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+    gap: 10px;
+    height: 250px;
+    color: #f8fafc;
+    height: 5rem;
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+}
+.Contact:hover{
+    transform: scale(1.2);
+}
+.email{
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+}
+.linkedIn,.github{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.Contact img{
+    height: 2rem;
+}
+
+.Contact a{
+    color: white;
+}
