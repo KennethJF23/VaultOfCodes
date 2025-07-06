@@ -21,6 +21,7 @@ body{
   color: #f8fafc;
 }
 
+
 .bg-video{
     position: fixed;
     top: 0;
@@ -88,8 +89,28 @@ body{
     background-clip: text;
     font-size: 4rem;
     font-weight: 90;
-
 }
+
+spline-viewer{
+    width: 100%;
+    height: 600px;
+    display: block;
+    pointer-events: none;
+}
+
+@media (max-width: 768px) {
+    spline-viewer {
+        height: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    spline-viewer {
+        height: 300px;
+    }
+}
+
+
 
 .About{
     max-width: 1000px;
@@ -387,4 +408,94 @@ body{
 
 .Contact a{
     color: white;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .navbar button {
+        right: 0;
+    }
+
+    .About,
+    .Skills,
+    .Projects,
+    .Contact {
+        padding: 15px;
+        margin: 20px 10px;
+    }
+
+    .About {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .About img {
+        height: 150px;
+    }
+
+    .Skills ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .Skills li {
+        width: 80%;
+    }
+
+    .Projects .sub {
+        flex-direction: column;
+    }
+
+    .Projects .sub .P1,
+    .Projects .sub .P2,
+    .Projects .sub .P3 {
+        width: 100%;
+    }
+
+    .Contact {
+        transform: scale(1);
+    }
+
+    .Contact:hover {
+        transform: scale(1.05);
+    }
+
+    .email,
+    .linkedIn,
+    .github {
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main h1 {
+        font-size: 2.5rem;
+    }
+
+    .About h2,
+    .Skills h2,
+    .Projects h2,
+    .Contact h3 {
+        font-size: 1.5rem;
+    }
+
+    .Skills h3 {
+        font-size: 1rem;
+    }
+
+    .Projects p,
+    .About p {
+        font-size: 0.9rem;
+    }
+
+    .Projects img {
+        height: auto;
+    }
 }

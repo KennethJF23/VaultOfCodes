@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <video class="bg-video" loop autoplay muted plays-inline src="videos/galaxy.mp4" ></video>
+    <video class="bg-video" loop autoplay muted playsinline>
+        <source src="videos/galaxy.mp4" type="video/mp4">
+    </video>
     <div class="navbar">
         <a href="#about"><button>About Me</button></a>
         <a href="#skills"><button>Skills</button></a>
@@ -16,6 +18,8 @@
     </div>
     <br>
     <header class="main"><h1>KENNETH FERNANDES</h1></header>
+    <script  type="module" src="https://unpkg.com/@splinetool/viewer@1.10.22/build/spline-viewer.js"></script>
+    <spline-viewer url="https://prod.spline.design/vPwIU6awlThgONPq/scene.splinecode"></spline-viewer>
     <section id="about" class="About">
         <h2>About Me</h2>
         <br>
