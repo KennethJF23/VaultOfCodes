@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kenneth Fernandes - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+   <script>
+     (function(){
+       emailjs.init("JlN9c1Ppyyd4wB7AI"); // Replace with your EmailJS public key
+     })();
+   </script>
+    <script src="work.js" defer></script>
 </head>
 <body>
     <video class="bg-video" loop autoplay muted playsinline>
@@ -134,9 +141,20 @@ scalability</p>
         
     
     </section>
-    <br>    
-    <section id="contact" class="Contact">
+    <br>
+    
+    <section  id="contact" class="Contact">
         <h3>Contact</h3>
+        <form id="contactForm">
+        <input type="text" placeholder="Name" class="Name" name="name" required>
+        <input type="email" placeholder="Email" class="Email" name="email" required>
+        <input type="text" placeholder="Message" class="Message" name="message" required>
+        <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <section class="Footer">
+        <h3>Socials</h3>
         <div class="wrapper">
             <div class="email">
           <img src="images/gmail.png" alt="gmaillogo">
@@ -149,6 +167,9 @@ scalability</p>
         <div class="github">
             <img src="images/social.png" alt="githublogo">
             <a href="https://github.com/KennethJF23">Github</a>
+        </div>
+        <div class="cc">
+            <img src="./images/copyright.png" alt="copyright">
         </div>
         </div>
     </section>

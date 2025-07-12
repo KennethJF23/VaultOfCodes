@@ -364,7 +364,7 @@ spline-viewer{
 
 
 
-.Contact{
+.Footer{
     max-width: 1000px;
     margin: 50px auto;
     padding: 30px;
@@ -385,7 +385,7 @@ spline-viewer{
     gap: 20px;
     height: auto;
 }
-.Contact:hover{
+.Footer:hover{
     transform: scale(1.2);
 }
 .email{
@@ -402,13 +402,91 @@ spline-viewer{
     margin-top: 8px;
 }
 
-.Contact img{
+.Footer img{
     height: 2rem;
 }
 
-.Contact a{
+.Footer a{
     color: white;
 }
+
+.Contact{
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(255,255,255,0.1);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+    gap: 50px;
+}
+
+.Contact h3{
+    text-align: center;
+}
+
+.Contact input{
+    height: 50px;
+    width: 450px;
+    color: #f8fafc;
+    background: transparent;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(255,255,255,0.1);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.Contact input:hover{
+    transform: scale(1.1);
+}
+.Contact:hover{
+    transform: scale(1.1);
+}
+
+.Contact button:hover{
+    transform: scale(1.1);
+}
+
+.Name::placeholder{
+    text-align: center;
+    font-weight: 500;
+    color: white;
+}
+
+.Email::placeholder{
+    text-align: center;
+    font-weight: 500;
+    color: white;
+}
+
+.Message::placeholder{
+    text-align: center;
+    font-weight: 500;
+    color: white;
+}
+
+.Contact button{
+    height: 50px;
+    width: 250px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+.Contact form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+
 
 @media (max-width: 768px) {
     .navbar {
@@ -424,7 +502,7 @@ spline-viewer{
     .About,
     .Skills,
     .Projects,
-    .Contact {
+    .Footer {
         padding: 15px;
         margin: 20px 10px;
     }
@@ -457,11 +535,11 @@ spline-viewer{
         width: 100%;
     }
 
-    .Contact {
+    .Footer {
         transform: scale(1);
     }
 
-    .Contact:hover {
+    .Footer:hover {
         transform: scale(1.05);
     }
 
@@ -482,7 +560,7 @@ spline-viewer{
     .About h2,
     .Skills h2,
     .Projects h2,
-    .Contact h3 {
+    .Footer h3 {
         font-size: 1.5rem;
     }
 
