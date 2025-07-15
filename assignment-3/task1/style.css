@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("./assets/Minimalist-HD-Backgrounds.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    color: aliceblue;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.wrapper div {
+    border: 1px solid grey;
+    border-radius: 20px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s;
+}
+
+.wrapper div:hover {
+    transform: scale(1.05);
+}
+
+.wrapper h2 {
+    font-size: 1.3rem;
+    margin: 35px 0 10px 0;
+    color: aliceblue;
+    text-align: center;
+}
+
+.wrapper li {
+    font-size: 1rem;
+    color: aliceblue;
+    list-style: none;
+    text-align: center;
+}
+
+.wrapper button {
+    border-radius: 10px;
+    height: 35px;
+    width: 100px;
+    margin-top: 15px;
+    background-color: rgba(5, 98, 5, 0.764);
+    border: none;
+    transition: transform 0.3s;
+    color: white;
+    cursor: pointer;
+}
+
+.wrapper button:hover {
+    transform: scale(1.05);
+}
+
+.wrapper a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    .wrapper {
+        grid-template-columns: 1fr; /* Stack vertically */
+    }
+}
