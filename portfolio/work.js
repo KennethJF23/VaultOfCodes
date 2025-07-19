@@ -25,12 +25,12 @@ document.addEventListener('DOMContentLoaded', () => {
       templateParams
     )
     .then(() => {
-      alert("✅ Message sent successfully!");
+      alert("Message sent successfully!");
       form.reset();
     })
     .catch((error) => {
       console.error("EmailJS Error:", error);
-      alert("❌ Failed to send message.");
+      alert("Failed to send message.");
     });
   });
 });
